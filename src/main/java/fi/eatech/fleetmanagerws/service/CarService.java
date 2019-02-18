@@ -39,7 +39,10 @@ public class CarService {
    
    /* Edits existing car. */
    public Car edit(Car car) {
-      return carRepository.save(car);
+      if (find(car.getRegistration()) != null)
+         return carRepository.save(car);
+      else
+         return null;
    }
    
    /* 
