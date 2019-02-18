@@ -92,6 +92,8 @@ public class CarService {
    
    /* 
     * Loads cars from CSV file into the database. 
+    *
+    * TODO: modify into more time efficient version etc
     */
    @PostConstruct
    public void loadFromCSV() {

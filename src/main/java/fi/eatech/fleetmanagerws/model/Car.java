@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Id;
+import io.swagger.annotations.ApiModel;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
  * Represents a car of the fleet.
  */
 @Entity
+@ApiModel(description = "Represents a car of the fleet.")
 public class Car {
    
    /* Attributes. */
