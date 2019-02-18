@@ -6,6 +6,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/* 
+ * Car repository
+ * - with methods for finding cars by modelyear, make and model.
+ *
+ */
 @Repository
 public interface CarRepository extends JpaRepository<Car, String> {
 
