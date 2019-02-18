@@ -5,7 +5,7 @@ Pretask given by Etteplan MORE in spring 2019.
 Supports adding, editing and deleting a car, 
 getting info of a spesific car, all of the cars, cars by model year, cars by make and cars by model.
 
-Initializes the database with the info in car.csv file.
+Initializes the database with the seed-data in car.csv file.
 
 ## Built with
 * [Maven](https://maven.apache.org/) - Dependency Management
