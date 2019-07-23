@@ -51,9 +51,9 @@ public class CarService {
     * the given registration number.
     */
    public Car deleteOne(String registration) {
-      Car toDelete = carRepository.findOne(registration);
+      Car toDelete = find(registration);
       if (toDelete != null)
-         carRepository.delete(registration);
+         carRepository.deleteById(registration);
       return toDelete;
    }   
    
@@ -61,7 +61,7 @@ public class CarService {
     * Returns a car from the database with the given registration. 
     */
    public Car find(String registration) {
-      return carRepository.findOne(registration);
+      return carRepository.findById(registration).orElse(null);
    }   
    
    /* Returns a list of all the cars in the database. */

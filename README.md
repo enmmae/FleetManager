@@ -26,7 +26,7 @@ mvn spring-boot:run
 
 ### PostMan sample requests
 
-https://www.getpostman.com/collections/46b4e12317a27606a164
+https://www.getpostman.com/collections/4610e3d6a35784d793c6
 
 ### Swagger documentation
 

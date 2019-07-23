@@ -5,13 +5,7 @@ import fi.eatech.fleetmanagerws.repository.CarRepository;
 import fi.eatech.fleetmanagerws.service.CarService;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import io.swagger.annotations.ApiOperation;
@@ -35,7 +29,7 @@ public class FleetController {
    public ResponseEntity getHealth() {
       return ResponseEntity.ok("System up");
    }
-   
+
    @ApiOperation(value = "Add a new car to the fleet.")
    @PostMapping("/add")
    public Car addCar(@RequestBody Car car) {
@@ -43,7 +37,7 @@ public class FleetController {
    }
    
    @ApiOperation(value = "Edit existing car of the fleet.")
-   @PostMapping("/edit")
+   @PutMapping("/edit")
    public Car editCar(@RequestBody Car car) {
       return carService.edit(car);
    }

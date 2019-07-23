@@ -1,0 +1,5 @@
+fi\eatech\fleetmanagerws\controller\FleetController.class
+fi\eatech\fleetmanagerws\service\CarService.class
+fi\eatech\fleetmanagerws\model\Car.class
+fi\eatech\fleetmanagerws\FleetManagerWsApplication.class
+fi\eatech\fleetmanagerws\repository\CarRepository.class
